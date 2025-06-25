@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,tr,th,td{
+        border: 1px solid black;
+        border-collapse:collapse;
+        margin: 10px;
+        padding: 10px;
+    }
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+tbody tr:nth-child(even){
+background-color: aqua;
+}
+tbody td:nth-child(even){
+background-color: yellow;
+}
+</style>
+<body>
+    <div class="app">
+        <table>
+            <tr>
+                <th colspan="4">Arul G Mark</th>
+            </tr>
+           <tr>
+            <th>name</th>
+            <th>subject</th>
+            <th>mark</th>
+            <th>Dept</th>
+           </tr>
+           <tbody>
+           <tr>
+            <td>Arul</td>
+            <td>Maths</td>
+            <td>100</td>
+            <td rowspan="4">IT</td>
+           </tr> 
+            <tr>
+            <td>Arul</td>
+            <td>OS</td>
+            <td>100</td>
+           </tr> 
+            <tr>
+            <td>Arul</td>
+            <td>ATT</td>
+            <td>100</td>
+           </tr> 
+            <tr>
+            <td>Arul</td>
+            <td>CN</td>
+            <td>100</td>
+           </tr> 
+           <tr>
+<td colspan="2">Total</td>
+<td>400</td>
+           </tr>
+   </tbody>
+        </table>
+    </div>
+</body>
+</html>
